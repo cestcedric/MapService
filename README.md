@@ -11,4 +11,4 @@ NOTE: since this project was originally developed using a password protected rep
 
 ## How to use
 While you can run the project standalone it is recommended to use Docker to scale the components.
-Detailed information about the system, as well as how to deploy it are available in the [documentation](https://github.com/cestcedric/MapService/blob/master/Documentation.pdf).
+Detailed information about the system, as well as how to deploy it are available in the [documentation](https://raw.githubusercontent.com/cestcedric/MapService/master/Documentation.pdf).
