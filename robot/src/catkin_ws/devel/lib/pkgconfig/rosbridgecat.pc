@@ -1,0 +1,8 @@
+prefix=/home/cedric/Desktop/IoT/robot/src/catkin_ws/devel
+
+Name: rosbridgecat
+Description: Description of rosbridgecat
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/cedric/Desktop/IoT/robot/src/catkin_ws/devel/lib 
+Requires: 

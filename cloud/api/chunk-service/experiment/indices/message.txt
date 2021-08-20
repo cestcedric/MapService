@@ -1,0 +1,1 @@
+date,shards-total,shards-successful,shards-failed,total-store,chunks-latest,chunks,coordinates-latest,coordinates,meta

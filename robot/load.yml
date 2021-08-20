@@ -1,0 +1,18 @@
+version: '3'
+services:
+  robot:
+    command: python src/load_test.py
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./map/map.pgm:/map/map.pgm:ro
+    environment:
+      - MQTT_BROKER=131.159.198.85
+      - MQTT_PORT=1883
+      - API_HOST=131.159.198.85
+      - API_PORT=8081
+      - CHUNK_WIDTH=100
+      - CHUNK_HEIGHT=100
+      - UPDATE_FREQUENCY=10 # 1/s
+      - SLOW_START=true

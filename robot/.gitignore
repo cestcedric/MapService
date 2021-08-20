@@ -1,0 +1,4 @@
+.idea
+__pycache__/
+
+src/chunk_manager/map/

@@ -1,0 +1,30 @@
+{
+  "name": "bmw-coordinate-service",
+  "version": "1.0.0",
+  "description": "Sample implementation of a robot coordinate service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.lrz.de/iot-bmw/cloud"
+  },
+  "author": "iot-bmw",
+  "license": "MIT",
+  "dependencies": {
+    "elasticsearch": "^15.0.0",
+    "express": "^4.16.3",
+    "mqtt": "^2.18.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.10.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0"
+  }
+}

@@ -1,0 +1,14 @@
+# use the full-size linux image to enable install of additional packages (netpbm for image transformation)
+FROM node:10
+WORKDIR /home/node/app
+RUN apt-get update && apt-get install -y netpbm
+COPY api/common ./common
+COPY api/chunk-service ./
+WORKDIR /home/node/app/common
+RUN npm install
+RUN npm pack
+WORKDIR /home/node/app/
+RUN npm install
+RUN npm install ./common/*.tgz
+ENV NODE_PATH=/home/node/app/node_modules
+CMD npm start

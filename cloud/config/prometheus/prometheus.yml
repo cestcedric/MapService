@@ -1,0 +1,8 @@
+scrape_configs:
+  - job_name: bmw
+    scrape_interval: 5s
+    scrape_timeout: 5s
+    static_configs:
+      - targets:
+          - "mqtt:8888"
+          - "elasticsearch-exporter:9108"

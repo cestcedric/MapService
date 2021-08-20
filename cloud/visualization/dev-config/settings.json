@@ -1,0 +1,42 @@
+{
+  "terminal.integrated.rightClickBehavior": "default",
+  // Turn off javascript default validation in favor of eslint
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  // Format all file types except JS and VueJS on save with standard formatter
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[vue]": {
+    // true/default: Use Default (+Prettier)
+    // false: Only use eslint configured below
+    "editor.formatOnSave": false
+  },
+  // Controls whether eslint is enabled for JavaScript files or not.
+  "eslint.enable": true,
+  //   "eslint.options": {
+  //     "extensions": [".js", ".vue"]
+  //   },
+  // An array of language ids which should be validated by ESLint
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  // Turns auto fix on save on or off.
+  "eslint.autoFixOnSave": true,
+  // Run the linter on save (onSave) or on type (onType)
+  "eslint.run": "onSave",
+  // Always show the ESlint status bar item.
+  "eslint.alwaysShowStatus": true
+}

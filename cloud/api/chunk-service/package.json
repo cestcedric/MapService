@@ -1,0 +1,32 @@
+{
+  "name": "bmw-chunk-service",
+  "version": "1.0.0",
+  "description": "Sample implementation of a robot map chunk service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha",
+    "start": "node --harmony index.js",
+    "fillDB": "node initialize_database.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.lrz.de/iot-bmw/cloud"
+  },
+  "author": "iot-bmw",
+  "license": "MIT",
+  "dependencies": {
+    "cli-progress": "^2.1.1",
+    "https": "^1.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.10.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0"
+  }
+}

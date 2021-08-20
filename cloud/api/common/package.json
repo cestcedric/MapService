@@ -1,0 +1,17 @@
+{
+  "name": "common-api-files",
+  "version": "1.0.0",
+  "description": "Common api files for the services connecting to mqtt and elasticsearch and exposing a rest interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dominik Serve",
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^15.0.0",
+    "express": "^4.16.3",
+    "mqtt": "^2.18.1",
+    "uuid": "^3.3.2"
+  }
+}

@@ -1,0 +1,12 @@
+FROM node:10-alpine
+WORKDIR /home/node/app
+COPY api/common ./common
+COPY api/coordinate-service ./
+WORKDIR /home/node/app/common
+RUN npm install
+RUN npm pack
+WORKDIR /home/node/app/
+RUN npm install
+RUN npm install ./common/*.tgz
+ENV NODE_PATH=/home/node/app/node_modules
+CMD npm start

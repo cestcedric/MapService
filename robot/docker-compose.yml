@@ -1,0 +1,23 @@
+version: "3"
+services:
+  robot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src/chunk_manager/map/map.pgm:/usr/src/app//src/chunk_manager/map/map.pgm:ro
+    environment:
+      - MQTT_BROKER=35.185.9.59
+      - MQTT_PORT=1883
+      - API_HOST=35.185.9.59
+      - API_PORT=8081
+      - CHUNK_WIDTH=100
+      - CHUNK_HEIGHT=100
+      - UPDATE_FREQUENCY=0.5 # 1/s
+      - SLOW_START=true
+    networks:
+      - proxynet
+networks:
+  proxynet:
+    external:
+      name: custom_network
